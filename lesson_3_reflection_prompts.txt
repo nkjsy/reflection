@@ -1,5 +1,10 @@
-何时你会想使用远程版本库，而不是将所有工作保存在本地？
-
 git remote add origin URL
 
 git push origin master
+
+How to update a cross-repo pull request in case of merge conflict?
+
+1. Add the original repo as the second remote of your local repo.
+2. Pull the master branch from the original repo.
+3. Merge the master branch to your changed branch. Here need to solve the conflict.
+4. Push your changed branch to your fork. The pull request will be now updated automatically.
